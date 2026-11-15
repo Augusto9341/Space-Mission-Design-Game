@@ -1,0 +1,26 @@
+[PERGUNTA]
+O sistema de propulsão apresentou uma falha.
+Considere a equação x² - 5x + 6 = 0.
+
+Informe as raízes da maior para a menor.
+[RESPOSTA]
+3
+2
+
+[PERGUNTA]
+O sistema de propulsão apresentou uma falha.
+Considere a equação x² - 7x + 10 = 0.
+
+Informe a soma e o produto das raízes.
+[RESPOSTA]
+7
+10
+
+[PERGUNTA]
+O sistema de propulsão apresentou uma falha.
+Considere a equação x² = 0.
+
+Informe a soma e o produto das raízes.
+[RESPOSTA]
+0
+0

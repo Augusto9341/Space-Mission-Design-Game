@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dc7p41dbc20qu"
+path="res://.godot/imported/Spaceship Control Room Ambience.mp3-08646726ca7b9597f16ae64429868b64.mp3str"
+
+[deps]
+
+source_file="res://Space-Mission-Design-Game/Sound/Spaceship Control Room Ambience.mp3"
+dest_files=["res://.godot/imported/Spaceship Control Room Ambience.mp3-08646726ca7b9597f16ae64429868b64.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwvyf0mdw2b02"
+path="res://.godot/imported/Ventilation Whir.mp3-b43f6b98cfa0d0466626283bce6b5789.mp3str"
+
+[deps]
+
+source_file="res://Ventilation Whir.mp3"
+dest_files=["res://.godot/imported/Ventilation Whir.mp3-b43f6b98cfa0d0466626283bce6b5789.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://kep6m21ba0nk"]
+
+[ext_resource type="Script" uid="uid://du3gd1slpxqjt" path="res://script/Loja.cs" id="1_j5sdj"]
+
+[node name="Loja" type="Node2D" unique_id=971206427]
+
+[node name="Loja" type="Control" parent="." unique_id=1093269445]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_j5sdj")
+
+[node name="Espaço" type="Button" parent="Loja" unique_id=68136771]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 225.0
+offset_right = 656.0
+offset_bottom = 261.0
+text = "Missão Marte"
+
+[node name="Marte" type="Button" parent="Loja" unique_id=1180273260]
+layout_mode = 0
+offset_left = 221.0
+offset_top = 222.0
+offset_right = 381.0
+offset_bottom = 258.0
+text = "Missão Espacial"
+
+[node name="Lua" type="Button" parent="Loja" unique_id=1432700269]
+layout_mode = 0
+offset_left = 746.0
+offset_top = 218.0
+offset_right = 906.0
+offset_bottom = 254.0
+text = "Missão Lua"
+
+[node name="experimento químico" type="Button" parent="Loja" unique_id=1129407594]
+layout_mode = 0
+offset_left = 486.0
+offset_top = 418.0
+offset_right = 660.0
+offset_bottom = 454.0
+text = "experimento químico
+"
+
+[node name="experimento biológico" type="Button" parent="Loja" unique_id=1382702152]
+layout_mode = 0
+offset_left = 211.0
+offset_top = 415.0
+offset_right = 392.0
+offset_bottom = 451.0
+text = "experimento biológico"
+
+[node name="experimento geológico" type="Button" parent="Loja" unique_id=607605512]
+layout_mode = 0
+offset_left = 736.0
+offset_top = 411.0
+offset_right = 921.0
+offset_bottom = 447.0
+text = "experimento geológico"
+
+[node name="Label" type="Label" parent="Loja" unique_id=1528239173]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 37.0
+offset_right = 150.0
+offset_bottom = 76.0
+text = "moedas:"
+
+[node name="LabelMoedas" type="Label" parent="Loja" unique_id=273721178]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 66.0
+offset_right = 150.0
+offset_bottom = 105.0
+text = "moedas:"

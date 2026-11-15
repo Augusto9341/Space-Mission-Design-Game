@@ -1,0 +1,340 @@
+[gd_scene format=3 uid="uid://cjvd48ewfpfda"]
+
+[ext_resource type="Script" uid="uid://dtl2wl1aifh5d" path="res://script/Mestre.cs" id="1_5a8f5"]
+[ext_resource type="Texture2D" uid="uid://cy2wwstjn8q6y" path="res://sprites/backgrounds/cabine_pixel.png" id="1_ld5p7"]
+[ext_resource type="Texture2D" uid="uid://bijgnpnaejwvy" path="res://sprites/tela.png" id="3_ols4k"]
+[ext_resource type="Script" uid="uid://dcfa63a7ufcb" path="res://script/PainelManutencao.cs" id="4_6s4cc"]
+[ext_resource type="Script" uid="uid://y4qo0xvxndaq" path="res://script/FiltroVermelho.cs" id="5_taih5"]
+[ext_resource type="Script" uid="uid://b5ro04ojh5xww" path="res://script/FiltroEnergia.cs" id="6_pd61a"]
+[ext_resource type="Script" uid="uid://dehgrb6jra7yk" path="res://script/FiltroLaranja.cs" id="7_oilgw"]
+[ext_resource type="Script" uid="uid://d4jok28dusvay" path="res://script/PuzzleOxigenio.cs" id="8_b03l5"]
+[ext_resource type="AudioStream" uid="uid://cirqor52pnvpu" path="res://Emergency Alarm Siren Loop.mp3" id="8_vh2al"]
+[ext_resource type="Script" uid="uid://dvil6157f213u" path="res://script/PuzzleMotor.cs" id="9_ypwdx"]
+[ext_resource type="AudioStream" uid="uid://bwvyf0mdw2b02" path="res://Ventilation Whir.mp3" id="11_sn8xv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sn8xv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5uxm4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1am8k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i2eub"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_itg2t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rrx4v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ejr05"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iq8en"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8g1ju"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_id6qt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ypwdx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vh2al"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vek7c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yj323"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v54ka"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l36q4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_myaqu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8kiel"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2bac2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_plxq0"]
+
+[node name="Node2D" type="Node2D" unique_id=731076612]
+script = ExtResource("1_5a8f5")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1543920897]
+offset_top = 1.0
+offset_right = 1150.0
+offset_bottom = 645.0
+texture = ExtResource("1_ld5p7")
+
+[node name="PainelManutencao" type="Node2D" parent="." unique_id=933734666]
+position = Vector2(568, 302)
+script = ExtResource("4_6s4cc")
+
+[node name="Sprite2D" type="Sprite2D" parent="PainelManutencao" unique_id=1082122277]
+texture = ExtResource("3_ols4k")
+
+[node name="Label" type="Label" parent="PainelManutencao" unique_id=1397676137]
+offset_left = -196.0
+offset_top = -211.0
+offset_right = -64.0
+offset_bottom = -188.0
+text = "vidaExperimento:
+"
+
+[node name="VidaExperimento" type="Label" parent="PainelManutencao" unique_id=989682134]
+offset_left = -199.0
+offset_top = -179.0
+offset_right = -159.0
+offset_bottom = -150.0
+text = "x%"
+
+[node name="FiltroVermelho" type="ColorRect" parent="." unique_id=2023443395]
+visible = false
+offset_right = 1154.0
+offset_bottom = 647.0
+color = Color(0.7294118, 0, 0, 1)
+script = ExtResource("5_taih5")
+
+[node name="FiltroEnergia" type="ColorRect" parent="." unique_id=908104246]
+visible = false
+offset_right = 1154.0
+offset_bottom = 647.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("6_pd61a")
+
+[node name="FiltroLaranja" type="ColorRect" parent="." unique_id=1112222437]
+visible = false
+offset_right = 1154.0
+offset_bottom = 647.0
+color = Color(0, 0, 0, 1)
+script = ExtResource("7_oilgw")
+
+[node name="action" type="Button" parent="." unique_id=1204735453]
+offset_left = 144.0
+offset_top = 596.0
+offset_right = 1013.0
+offset_bottom = 639.0
+button_mask = 3
+text = "V"
+
+[node name="virarDireita" type="Button" parent="." unique_id=1033845502]
+offset_left = 1087.0
+offset_top = 26.0
+offset_right = 1131.0
+offset_bottom = 606.0
+button_mask = 3
+text = ">"
+
+[node name="virarEsquerda" type="Button" parent="." unique_id=1120517187]
+offset_left = 9.0
+offset_top = 20.0
+offset_right = 53.0
+offset_bottom = 600.0
+button_mask = 3
+text = "<"
+
+[node name="AlertaMeteoro" type="AudioStreamPlayer2D" parent="." unique_id=1485745488]
+stream = ExtResource("8_vh2al")
+
+[node name="LaserMeteoro" type="AudioStreamPlayer2D" parent="." unique_id=909851422]
+
+[node name="Interface" type="Control" parent="." unique_id=1262966827]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PuzzleOxigenio" type="Control" parent="Interface" unique_id=438330569]
+visible = false
+anchors_preset = 0
+offset_left = 356.0
+offset_top = 69.0
+offset_right = 396.0
+offset_bottom = 109.0
+script = ExtResource("8_b03l5")
+
+[node name="Fundo2" type="ColorRect" parent="Interface/PuzzleOxigenio" unique_id=1908745173]
+layout_mode = 0
+offset_left = -43.0
+offset_top = -14.0
+offset_right = 467.0
+offset_bottom = 476.0
+color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+
+[node name="Fundo" type="ColorRect" parent="Interface/PuzzleOxigenio" unique_id=1290968407]
+layout_mode = 0
+offset_left = -34.0
+offset_right = 452.0
+offset_bottom = 473.0
+color = Color(0, 0, 0, 1)
+
+[node name="Título" type="Label" parent="Interface/PuzzleOxigenio" unique_id=692058003]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 5.0
+offset_right = 244.0
+offset_bottom = 28.0
+text = "Oxigênio"
+
+[node name="Enunciado" type="Label" parent="Interface/PuzzleOxigenio" unique_id=1990700736]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 89.0
+offset_right = 167.0
+offset_bottom = 112.0
+text = "Ajuste de Oxigênio"
+
+[node name="Resposta" type="LineEdit" parent="Interface/PuzzleOxigenio" unique_id=144665425]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 168.0
+offset_right = 405.0
+offset_bottom = 199.0
+
+[node name="Confirmar" type="Button" parent="Interface/PuzzleOxigenio" unique_id=741980378]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 326.0
+offset_right = 404.0
+offset_bottom = 386.0
+text = "confirmar"
+
+[node name="Fechar" type="Button" parent="Interface/PuzzleOxigenio" unique_id=1119135133]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 396.0
+offset_right = 406.0
+offset_bottom = 456.0
+text = "Fechar
+"
+
+[node name="PuzzleMotor" type="Control" parent="Interface" unique_id=755539333]
+anchors_preset = 0
+offset_left = 356.0
+offset_top = 69.0
+offset_right = 396.0
+offset_bottom = 109.0
+script = ExtResource("9_ypwdx")
+
+[node name="Fundo2" type="ColorRect" parent="Interface/PuzzleMotor" unique_id=2097477375]
+layout_mode = 0
+offset_left = -43.0
+offset_top = -14.0
+offset_right = 467.0
+offset_bottom = 476.0
+color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+
+[node name="Fundo" type="ColorRect" parent="Interface/PuzzleMotor" unique_id=1370223366]
+visible = false
+layout_mode = 0
+offset_left = -34.0
+offset_right = 452.0
+offset_bottom = 473.0
+color = Color(0, 0, 0, 1)
+
+[node name="Título" type="Label" parent="Interface/PuzzleMotor" unique_id=1680379007]
+layout_mode = 0
+offset_left = 175.0
+offset_top = 5.0
+offset_right = 244.0
+offset_bottom = 28.0
+text = "Motor
+"
+
+[node name="Enunciado" type="Label" parent="Interface/PuzzleMotor" unique_id=300234842]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 89.0
+offset_right = 167.0
+offset_bottom = 112.0
+text = "equação"
+
+[node name="Enunciado2" type="Label" parent="Interface/PuzzleMotor" unique_id=999963808]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 185.0
+offset_right = 165.0
+offset_bottom = 208.0
+text = "equação"
+
+[node name="RespostaSoma" type="LineEdit" parent="Interface/PuzzleMotor" unique_id=301628460]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 129.0
+offset_right = 399.0
+offset_bottom = 160.0
+
+[node name="RespostaProduto" type="LineEdit" parent="Interface/PuzzleMotor" unique_id=809730128]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 240.0
+offset_right = 402.0
+offset_bottom = 271.0
+
+[node name="Confirmar" type="Button" parent="Interface/PuzzleMotor" unique_id=1931076513]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 326.0
+offset_right = 404.0
+offset_bottom = 386.0
+text = "confirmar"
+
+[node name="Fechar" type="Button" parent="Interface/PuzzleMotor" unique_id=106715457]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 396.0
+offset_right = 406.0
+offset_bottom = 456.0
+text = "Fechar"
+
+[node name="Botoes" type="Control" parent="." unique_id=2132219331]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="fusivel" type="Button" parent="Botoes" unique_id=1075373539]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 173.0
+offset_right = 539.2383
+offset_bottom = 213.16437
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sn8xv")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5uxm4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1am8k")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_i2eub")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_itg2t")
+
+[node name="O2button" type="Button" parent="Botoes" unique_id=1771264031]
+layout_mode = 0
+offset_left = 881.0
+offset_top = 374.0
+offset_right = 931.20605
+offset_bottom = 425.1396
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rrx4v")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ejr05")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_iq8en")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8g1ju")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_id6qt")
+
+[node name="rota" type="Button" parent="Botoes" unique_id=446491652]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 478.0
+offset_right = 939.0
+offset_bottom = 551.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ypwdx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vh2al")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vek7c")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_yj323")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_v54ka")
+
+[node name="Meteoritos" type="Button" parent="." unique_id=1006706913]
+offset_left = 767.0
+offset_top = 446.0
+offset_right = 799.24493
+offset_bottom = 472.3406
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l36q4")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_myaqu")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8kiel")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_2bac2")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_plxq0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=515801679]
+stream = ExtResource("11_sn8xv")
+autoplay = true

@@ -1,0 +1,23 @@
+[PERGUNTA]
+Resolva a equação para restaurar o fornecimento de oxigênio:
+2x + 10 = 30
+[RESPOSTA]
+10
+
+[PERGUNTA]
+Resolva a equação:
+3x - 6 = 12
+[RESPOSTA]
+6
+
+[PERGUNTA]
+Resolva a equação:
+5x + 15 = 40
+[RESPOSTA]
+5
+
+[PERGUNTA]
+qual o valor de y
+(sen X)^2+(cos x)^2=y
+[RESPOSTA]
+1

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bfehe5w1whnri"]
+
+[ext_resource type="Script" uid="uid://b43rdx31d5i7j" path="res://script/menu.cs" id="1_ulb1h"]
+
+[node name="Node2D" type="Node2D" unique_id=1056284946]
+script = ExtResource("1_ulb1h")
+
+[node name="iniciar" type="Button" parent="." unique_id=501882216]
+offset_left = 100.0
+offset_top = 85.0
+offset_right = 108.0
+offset_bottom = 93.0
+text = "Iniciar jogo"
+
+[node name="Loja" type="Button" parent="." unique_id=1985959762]
+offset_left = 103.0
+offset_top = 124.0
+offset_right = 197.0
+offset_bottom = 155.0
+text = "opções"
+
+[node name="sair" type="Button" parent="." unique_id=1830392744]
+offset_left = 101.0
+offset_top = 165.0
+offset_right = 195.0
+offset_bottom = 196.0
+text = "sair
+"
