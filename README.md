@@ -41,11 +41,12 @@ Without a stable power supply, the integrity of these samples gradually decrease
 Their integrity can be monitored through the onboard tablet.
 
 ### Oxygen
+indicated by the red filter
 
 Oxygen system failures require immediate attention. Players must reach the appropriate control panel and solve a mathematical challenge to restore the system before the oxygen supply is depleted.
 
 ### Navigation
-
+indicated by the orange filter
 Trajectory deviations can compromise the entire mission. Players must use the spacecraft's navigation controls to correct its course before it remains off trajectory for too long.
 
 ### Meteoroid Threats
