@@ -83,3 +83,7 @@ All AI-assisted outputs were reviewed, adapted, and integrated by the team. The 
 This project was developed as part of the **NASA Space Apps Challenge**, drawing inspiration from NASA's educational resource:
 
 [**Design and Develop Science Missions – NASA**](https://www.nasa.gov/wp-content/uploads/2025/04/250323-design-and-develop-science-mission.pdf?emrc=a454cf)
+
+## How to run
+
+clone and click in "Houston,We Have a Problem.Exe"
